@@ -237,8 +237,14 @@ You have to enable your php socket if it is not enable.
 //    get User Finger Print
 //    this return array[]
 //    you Cannot read the data. it is encrypted. so when need to save it in db or file make sure you encode it with base64_encoding
-    $finger = $zk->getFingerprint(1);
-    return base64_encode($sg[6]);
+    $userid = 1;
+    $fingers = $zk->getFingerprint($userid);
+// This is return all finger print of user with id 1 to see all finger print data do a forloop
+    foreach($fingers as $key=>$finger){
+        Log::info($key); // key is the finger print id
+        Log::info(base64_encode($finger)); // this is the data of the fingerprint
+    }
+// save the Data to database
 ```
 
 * __Clear All Admin__ 
