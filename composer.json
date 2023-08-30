@@ -1,12 +1,12 @@
 {
-    "name": "rats/zkteco",
+    "name": "masumcity/zktecolaravel",
     "description": "ZKTeco Laravel Library",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Raihan Afroz",
-            "email": "raihanafroz9@gmail.com"
+            "name": "Riaz Uddin Masum",
+            "email": "masumcis@gmail.com"
         }
     ],
     "autoload": {
