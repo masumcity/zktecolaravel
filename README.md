@@ -232,6 +232,15 @@ You have to enable your php socket if it is not enable.
     $zk->setUser('1','1','Masum','123456','0','8960527'); 
 ```
 
+* __Get User Finger Print__ 
+```php
+//    get User Finger Print
+//    this return array[]
+//    you Cannot read the data. it is encrypted. so when need to save it in db or file make sure you encode it with base64_encoding
+    $finger = $zk->getFingerprint(1);
+    return base64_encode($sg[6]);
+```
+
 * __Clear All Admin__ 
 ```php
 //    remove all admin
