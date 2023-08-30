@@ -229,7 +229,7 @@ You have to enable your php socket if it is not enable.
 
 //    return bool|mixed
 
-    $zk->setUser(); 
+    $zk->setUser('1','1','Masum','123456','0','8960527'); 
 ```
 
 * __Clear All Admin__ 
@@ -245,7 +245,7 @@ You have to enable your php socket if it is not enable.
 //    remove all users
 //    return bool|mixed
 
-    $zk->clearAdmin(); 
+    $zk->clearUsers(); 
 ```
 
 * __Remove A User__ 
@@ -254,7 +254,7 @@ You have to enable your php socket if it is not enable.
 //    parameter integer $uid
 //    return bool|mixed
 
-    $zk->removeUser(); 
+    $zk->removeUser('1'); 
 ```
 
 * __Get Attendance Log__ 
